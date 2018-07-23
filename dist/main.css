@@ -1,3 +1,21 @@
+.button-red {
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background-color: #f14859;
+  border-radius: 4px;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .2s;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 12px;
+  padding: 10px 30px; }
+  .button-red:hover, .button-red:focus {
+    background-color: palevioletred; }
+
 body {
   font-family: 'Open Sans',sans-serif;
   background-color: #475a85;
@@ -24,7 +42,8 @@ body {
       padding: 0 10%;
       display: flex;
       align-items: center;
-      justify-content: space-between; }
+      justify-content: space-between;
+      display: none; }
       body .header .nav .nav__logo {
         text-decoration: none;
         color: #fff;
@@ -70,21 +89,6 @@ body {
         font-size: 18px;
         width: 145px;
         height: 54px; }
-    body .header .button-red {
-      text-decoration: none;
-      text-align: center;
-      cursor: pointer;
-      color: #fff;
-      background-color: #f14859;
-      border-radius: 4px;
-      border: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: .2s;
-      font-family: 'Open Sans',sans-serif; }
-      body .header .button-red:hover, body .header .button-red:focus {
-        background-color: palevioletred; }
     body .header .header__image {
       width: 45%;
       display: flex;
@@ -94,25 +98,76 @@ body {
       body .header .header__image img {
         width: 100%;
         height: auto; }
-  body .main .article {
-    padding: 50px 10% 80px;
+  body .main .article-services {
+    padding: 70px 15% 80px; }
+    body .main .article-services .article__header {
+      margin-bottom: 80px; }
+  body .main .article,
+  body .main .section {
+    padding: 0;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between; }
-    body .main .article .article__header {
+    body .main .article .article__header,
+    body .main .article .section__header,
+    body .main .section .article__header,
+    body .main .section .section__header {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       color: #fff;
       text-align: center;
-      margin-bottom: 50px;
       width: 100%; }
-      body .main .article .article__header .article__title {
+      body .main .article .article__header .article__title,
+      body .main .article .article__header .section__heading,
+      body .main .article .section__header .article__title,
+      body .main .article .section__header .section__heading,
+      body .main .section .article__header .article__title,
+      body .main .section .article__header .section__heading,
+      body .main .section .section__header .article__title,
+      body .main .section .section__header .section__heading {
         font-size: 30px;
         margin: 0 0 5px; }
-      body .main .article .article__header .article__desc {
+      body .main .article .article__header .article__desc,
+      body .main .article .article__header .section__desc,
+      body .main .article .section__header .article__desc,
+      body .main .article .section__header .section__desc,
+      body .main .section .article__header .article__desc,
+      body .main .section .article__header .section__desc,
+      body .main .section .section__header .article__desc,
+      body .main .section .section__header .section__desc {
         font-size: 18px;
         margin: 0 0 12px 0; }
-  body .main .section-services {
-    display: flex;
-    width: 200px;
-    flex-direction: column;
-    align-items: center; }
+    body .main .article .section-services,
+    body .main .section .section-services {
+      display: flex;
+      width: 220px;
+      flex-direction: column;
+      align-items: center;
+      color: #fff; }
+      body .main .article .section-services .paragraph,
+      body .main .section .section-services .paragraph {
+        font-size: 14px;
+        text-align: center;
+        margin: 0 0 30px; }
+  body .main .article-services {
+    padding: 50px 10% 80px; }
+  body .main .article-work {
+    width: 100%; }
+    body .main .article-work .article__header {
+      height: 400px;
+      background-color: #9b9b9b;
+      background-image: url(/dist/img/pattern-parallax.png); }
+      body .main .article-work .article__header .article__heading {
+        font-size: 48px;
+        margin: 0; }
+      body .main .article-work .article__header .article__desc {
+        font-size: 24px; }
+    body .main .article-work .section__portfolio {
+      width: 100%;
+      background-color: #fff;
+      padding: 70px 10% 0; }
+      body .main .article-work .section__portfolio .section__header {
+        color: #000; }
