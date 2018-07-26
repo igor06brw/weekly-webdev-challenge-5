@@ -16,6 +16,9 @@
   .button-red:hover, .button-red:focus {
     background-color: palevioletred; }
 
+* {
+  color: #1f1f1f; }
+
 body {
   font-family: 'Open Sans',sans-serif;
   background-color: #475a85;
@@ -75,13 +78,14 @@ body {
       align-items: flex-start;
       flex-direction: column;
       width: 55%;
-      color: #fff;
       min-height: 100px; }
       body .header .header__content .header__title {
+        color: #fff;
         font-size: 36px;
         padding: 0;
         margin: 0; }
       body .header .header__content .header__desc {
+        color: #fff;
         font-size: 24px;
         padding: 0;
         margin: 24px 0 60px; }
@@ -117,7 +121,6 @@ body {
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      color: #fff;
       text-align: center;
       width: 100%; }
       body .main .article .article__header .article__title,
@@ -128,6 +131,7 @@ body {
       body .main .section .article__header .section__heading,
       body .main .section .section__header .article__title,
       body .main .section .section__header .section__heading {
+        color: #fff;
         font-size: 30px;
         margin: 0 0 5px; }
       body .main .article .article__header .article__desc,
@@ -138,6 +142,7 @@ body {
       body .main .section .article__header .section__desc,
       body .main .section .section__header .article__desc,
       body .main .section .section__header .section__desc {
+        color: #fff;
         font-size: 18px;
         margin: 0 0 12px 0; }
     body .main .article .section-services,
@@ -145,10 +150,13 @@ body {
       display: flex;
       width: 220px;
       flex-direction: column;
-      align-items: center;
-      color: #fff; }
+      align-items: center; }
+      body .main .article .section-services .section__heading,
+      body .main .section .section-services .section__heading {
+        color: #fff; }
       body .main .article .section-services .paragraph,
       body .main .section .section-services .paragraph {
+        color: #fff;
         font-size: 14px;
         text-align: center;
         margin: 0 0 30px; }
@@ -162,9 +170,11 @@ body {
       background-image: url(/dist/img/pattern-parallax.png); }
       body .main .article-work .article__header .article__heading {
         font-size: 48px;
-        margin: 0; }
+        margin: 0;
+        color: #fff; }
       body .main .article-work .article__header .article__desc {
-        font-size: 24px; }
+        font-size: 24px;
+        color: #fff; }
     body .main .article-work .section__portfolio {
       width: 100%;
       background-color: #fff;
@@ -176,6 +186,10 @@ body {
       body .main .article-work .section__portfolio .section__header {
         margin: 0 0 50px;
         color: #000; }
+        body .main .article-work .section__portfolio .section__header .section__heading {
+          color: #1f1f1f; }
+        body .main .article-work .section__portfolio .section__header .section__desc {
+          color: #1f1f1f; }
       body .main .article-work .section__portfolio .portfolio__category {
         display: flex;
         align-items: center;
@@ -237,10 +251,100 @@ body {
             body .main .article-work .section__portfolio .projects__box .portfolio-item .figcaption .portfolio-item__heading {
               font-size: 24px;
               margin: 0;
-              padding: 0; }
+              padding: 0;
+              color: #fff; }
             body .main .article-work .section__portfolio .projects__box .portfolio-item .figcaption .paragraph {
+              color: #fff;
               font-size: 14px;
               margin: 22px 0 27px; }
           body .main .article-work .section__portfolio .projects__box .portfolio-item .figcaption:hover,
           body .main .article-work .section__portfolio .projects__box .portfolio-item .figcaption:focus {
             opacity: 1; }
+      body .main .article-work .section__portfolio .arrow__container {
+        text-align: center; }
+        body .main .article-work .section__portfolio .arrow__container p {
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 1.7em; }
+        body .main .article-work .section__portfolio .arrow__container .arrow__button {
+          border: 0;
+          background-color: transparent;
+          margin-bottom: 50px; }
+  body .main .article-testimonials {
+    background-color: #fff;
+    padding: 0 10% 80px; }
+    body .main .article-testimonials .article__header {
+      margin: 0 0 50px; }
+      body .main .article-testimonials .article__header .article__heading {
+        font-size: 30px;
+        color: #1f1f1f;
+        margin: 10px; }
+      body .main .article-testimonials .article__header .article__desc {
+        color: #1f1f1f;
+        margin-bottom: 20px;
+        font-size: 18px; }
+    body .main .article-testimonials .cite-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 0 40px;
+      padding: 0; }
+      body .main .article-testimonials .cite-block .person-figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 8px solid #ebebeb;
+        border-radius: 50%;
+        width: 350px;
+        margin: 0;
+        padding: 0; }
+        body .main .article-testimonials .cite-block .person-figure .person-image {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%; }
+      body .main .article-testimonials .cite-block .blockquote {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+        margin: 0;
+        padding: 0 0 0 10%;
+        width: 100%; }
+        body .main .article-testimonials .cite-block .blockquote .paragraph {
+          font-size: #1f1f1f; }
+        body .main .article-testimonials .cite-block .blockquote .blockquote-footer__name {
+          font-size: 24px;
+          font-weight: 700;
+          color: #1f1f1f; }
+    body .main .article-testimonials .buttons-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+      body .main .article-testimonials .buttons-container .button-cite {
+        border: 0;
+        background-color: #1f1f1f;
+        font-size: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin: 0 12px; }
+  body .main .article-contant {
+    width: 100%; }
+    body .main .article-contant .article__header {
+      height: 400px;
+      background-color: #9b9b9b;
+      background-image: url(/dist/img/pattern-parallax.png); }
+      body .main .article-contant .article__header .article__heading {
+        font-size: 48px;
+        margin: 0;
+        color: #fff; }
+      body .main .article-contant .article__header .article__desc {
+        font-size: 24px;
+        color: #fff; }
+    body .main .article-contant .contact-map-container {
+      width: 100%;
+      height: 450px; }
+      body .main .article-contant .contact-map-container iframe {
+        width: 100%;
+        height: 100%; }
