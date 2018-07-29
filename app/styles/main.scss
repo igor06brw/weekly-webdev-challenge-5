@@ -1,3 +1,21 @@
+//Import core folder;
+@import 'core/normalize';
+@import 'core/variables';
+@import 'core/fonts';
+@import 'core/mixins';
+@import 'core/global';
+
+//Import layout folder
+@import 'layout/header';
+@import 'layout/nav';
+@import 'layout/article-services';
+@import 'layout/article-work';
+@import 'layout/article-testimonials';
+@import 'layout/article-contact';
+@import 'layout/footer';
+
+
+
 .button-red {
     text-decoration: none;
     text-align: center;
