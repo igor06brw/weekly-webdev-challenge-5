@@ -1,3 +1,9 @@
+.article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
 .button-red {
   text-decoration: none;
   text-align: center;
@@ -330,7 +336,9 @@ body {
         border-radius: 50%;
         margin: 0 12px; }
   body .main .article-contant {
-    width: 100%; }
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
     body .main .article-contant .article__header {
       height: 400px;
       background-color: #9b9b9b;
@@ -348,3 +356,91 @@ body {
       body .main .article-contant .contact-map-container iframe {
         width: 100%;
         height: 100%; }
+    body .main .article-contant .section-contact-info {
+      padding: 70px 50px 80px;
+      background-color: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: center;
+      background: #475a85; }
+      body .main .article-contant .section-contact-info .section-header {
+        margin: 0 0 50px;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center; }
+        body .main .article-contant .section-contact-info .section-header .section-header__heading {
+          color: #fff;
+          font-size: 30px; }
+        body .main .article-contant .section-contact-info .section-header .section-header__desc {
+          color: #fff;
+          font-size: 18px; }
+      body .main .article-contant .section-contact-info .contact-content {
+        width: calc(50% - 20px);
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        color: #fff;
+        font-size: 18px; }
+        body .main .article-contant .section-contact-info .contact-content strong {
+          font-weight: bold;
+          color: #fff;
+          margin: 10px 0; }
+        body .main .article-contant .section-contact-info .contact-content .paragraph {
+          color: #fff;
+          margin: 10px 0; }
+        body .main .article-contant .section-contact-info .contact-content .place {
+          color: #fff;
+          margin: 10px 0; }
+          body .main .article-contant .section-contact-info .contact-content .place::before {
+            margin: 0 10px;
+            content: url(/dist/img/location.png); }
+        body .main .article-contant .section-contact-info .contact-content .phone .link-phone {
+          color: #fff;
+          margin: 10px 0; }
+        body .main .article-contant .section-contact-info .contact-content .phone::before {
+          margin: 0 10px;
+          content: url(/dist/img/phone.png); }
+        body .main .article-contant .section-contact-info .contact-content .mail {
+          color: #fff;
+          margin: 10px 0; }
+          body .main .article-contant .section-contact-info .contact-content .mail::before {
+            margin: 0 10px;
+            content: url(/dist/img/mail.png); }
+      body .main .article-contant .section-contact-info .form-container {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center; }
+        body .main .article-contant .section-contact-info .form-container .contact-form .input {
+          box-sizing: border-box;
+          border: none;
+          border-radius: 5px;
+          background: #eee;
+          padding: 20px;
+          font-size: 18px;
+          color: #616161;
+          font-family: 'Open Sans';
+          width: calc(50% - 10px); }
+          body .main .article-contant .section-contact-info .form-container .contact-form .input:first-of-type {
+            margin-right: 10px; }
+        body .main .article-contant .section-contact-info .form-container .contact-form .textarea {
+          box-sizing: border-box;
+          border: none;
+          border-radius: 5px;
+          background: #eee;
+          padding: 20px;
+          font-size: 18px;
+          color: #616161;
+          font-family: 'Open Sans';
+          margin-top: 15px;
+          width: 100%; }
+        body .main .article-contant .section-contact-info .form-container .contact-form .button-red {
+          margin-top: 10px;
+          font-size: 28px;
+          padding: 20px 40px; }
