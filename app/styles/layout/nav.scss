@@ -15,17 +15,40 @@
         display: flex;
         border: 0;
         background: transparent;
-        justify-content: flex-end;
+        
+
+
         .toggle__container {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            @include easeOut();
+
+            
             .toggle__span { 
                 background-color: $white;
-                width: 35px;
+                width: 25px;
                 height: 3px;
-                margin-top: 10px;
+                margin-top: 5px;
+                @include easeOut();
             }
-        }
+
+            &.close {
+                transform: rotate(180deg);
+        
+                .toggle__span {
+                    &:nth-child(1) {
+                        transform: rotate(45deg) translate(5px, 5px);
+                    }
+                    &:nth-child(2) {
+                        opacity: 0;
+                    }
+                    &:nth-child(3) {
+                        transform: rotate(-45deg) translate(6px, -6px);
+                    }
+                }
+            }
+        } 
     }
     .nav__logo {
         text-decoration: none;

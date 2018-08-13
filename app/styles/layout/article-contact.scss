@@ -5,9 +5,9 @@
         height: 400px;
         background-color: #9b9b9b;
         background-image: url(/dist/img/pattern-parallax.png);
+        margin: 0;
         .article__heading {
             font-size: 48px;
-            margin: 0;
             color: $white;
         }   
         .article__desc {
@@ -32,18 +32,14 @@
         align-items: baseline;
         justify-content: center;
         background: $standard-background;
-        .section-header{
-            margin: 0 0 50px;
-            width: 100%;
-            display: flex;
-            text-align: center;
-            flex-direction: column;
-            align-items: center;
-            .section-header__heading {
+        width: 100%;
+        .section__header{
+            margin-bottom: 80px;
+            .section__heading {
                 color: $white;
                 font-size: 30px;
             }
-            .section-header__desc {
+            .section__desc {
                 color: $white;
                 font-size: 18px;
             }

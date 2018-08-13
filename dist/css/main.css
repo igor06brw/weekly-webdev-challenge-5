@@ -1,6 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
-.article,
 .section {
   padding: 0;
   display: flex;
@@ -8,9 +7,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 80%; }
-  .article .article__header,
-  .article .section__header,
-  .section .article__header,
   .section .section__header {
     display: flex;
     justify-content: center;
@@ -19,25 +15,35 @@
     text-align: center;
     width: 100%;
     margin-bottom: 80px; }
-    .article .article__header .article__title,
-    .article .article__header .section__heading,
-    .article .section__header .article__title,
-    .article .section__header .section__heading,
-    .section .article__header .article__title,
-    .section .article__header .section__heading,
-    .section .section__header .article__title,
     .section .section__header .section__heading {
       color: #fff;
       font-size: 30px;
       margin: 0 0 5px; }
-    .article .article__header .article__desc,
-    .article .article__header .section__desc,
-    .article .section__header .article__desc,
-    .article .section__header .section__desc,
-    .section .article__header .article__desc,
-    .section .article__header .section__desc,
-    .section .section__header .article__desc,
     .section .section__header .section__desc {
+      color: #fff;
+      font-size: 18px;
+      margin: 0 0 12px 0; }
+
+.article {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%; }
+  .article .article__header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 80px; }
+    .article .article__header .article__title {
+      color: #fff;
+      font-size: 30px;
+      margin: 0 0 5px; }
+    .article .article__header .article__desc {
       color: #fff;
       font-size: 18px;
       margin: 0 0 12px 0; }
@@ -59,6 +65,10 @@
   padding: 10px 30px; }
   .button-red:hover, .button-red:focus {
     background-color: palevioletred; }
+
+@media screen and (max-width: 768px) {
+  .nav-list {
+    visibility: hidden; } }
 
 .header {
   display: flex;
@@ -119,24 +129,26 @@
   .nav .toggle-menu {
     display: flex;
     border: 0;
-    background: transparent;
-    justify-content: flex-end; }
+    background: transparent; }
     .nav .toggle-menu .toggle__container {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      justify-content: center;
+      transition: all 0.5s ease-out; }
       .nav .toggle-menu .toggle__container .toggle__span {
         background-color: #fff;
-        width: 35px;
+        width: 25px;
         height: 3px;
-        margin-top: 10px; }
-        .nav .toggle-menu .toggle__container .toggle__span.close {
-          transform: rotate(180deg); }
-          .nav .toggle-menu .toggle__container .toggle__span.close .btn-line:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 5px); }
-          .nav .toggle-menu .toggle__container .toggle__span.close .btn-line:nth-child(2) {
-            opacity: 0; }
-          .nav .toggle-menu .toggle__container .toggle__span.close .btn-line:nth-child(3) {
-            transform: rotate(-45deg) translate(5px, -7px); }
+        margin-top: 5px;
+        transition: all 0.5s ease-out; }
+      .nav .toggle-menu .toggle__container.close {
+        transform: rotate(180deg); }
+        .nav .toggle-menu .toggle__container.close .toggle__span:nth-child(1) {
+          transform: rotate(45deg) translate(5px, 5px); }
+        .nav .toggle-menu .toggle__container.close .toggle__span:nth-child(2) {
+          opacity: 0; }
+        .nav .toggle-menu .toggle__container.close .toggle__span:nth-child(3) {
+          transform: rotate(-45deg) translate(6px, -6px); }
   .nav .nav__logo {
     text-decoration: none;
     color: #fff;

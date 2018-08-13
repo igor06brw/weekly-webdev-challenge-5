@@ -13,7 +13,7 @@ gulp.task('imagemin', () => {
 gulp.task('sass', () => {
     return gulp.src("./app/styles/*.scss")
         .pipe(sass())
-        .pipe(gulp.dest("./dist"))
+        .pipe(gulp.dest("./dist/css/"))
         .pipe(browserSync.stream());
 });
 

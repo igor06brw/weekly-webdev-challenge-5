@@ -1,0 +1,38 @@
+//variables
+$white: #fff;
+$standard: #222222;
+$header-background: #161828;
+$standard-background: #475a85;
+
+//mixins 
+@mixin easeOut {
+    transition: all 0.5s ease-out;
+  }
+
+
+
+//fonts
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+//layout
+@mixin smallSize {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+@mixin mediumSize {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin largeSize {
+    @media screen and (min-width: 769px) and (max-width: 1170) {
+        @content;
+    }
+}
+@mixin extraLargeSize {
+    @media screen and (min-width: 1171px) {
+        @content;
+    }
+}

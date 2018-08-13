@@ -46,7 +46,7 @@
             width: 100%;
             
             .paragraph {
-               font-size: $standard; 
+               font-size: 18px; 
             }
             .blockquote-footer__name {
                 font-size: 24px;
@@ -62,13 +62,18 @@
         width: 100%;
         .button-cite {
             border: 0;
-            background-color: $standard;
+            background-color: #a9a9a9;
             font-size: 0;
             width: 20px;
             height: 20px;
             border-radius: 50%;
             margin: 0 12px;
 
+            &:hover,
+            &:focus {
+            background-color: $standard;
+            transition: background-color .2s ease-in-out;
+        }
         }
     }
 }

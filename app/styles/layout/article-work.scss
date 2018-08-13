@@ -5,6 +5,7 @@
         height: 400px;
         background-color: #9b9b9b;
         background-image: url(/dist/img/pattern-parallax.png);
+        margin: 0;
         .article__heading {
             font-size: 48px;
             margin: 0;
@@ -18,7 +19,7 @@
     .section__portfolio{
         width: 100%;
         background-color: $white;
-        padding: 70px 10% 0;
+        padding: 70px 5% 0;
         display: flex;
         align-items: center;
         justify-content: center;
